@@ -2,3 +2,4 @@ Packages
 docs
 .moonwave
 build
+.DS_Store
