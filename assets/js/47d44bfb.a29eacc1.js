@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[617],{63891:s=>{s.exports=JSON.parse('{"sourceUrl":"https://github.com/lillianskull/Scenic//blob/main","baseUrl":"/Scenic/","classOrder":[{"classes":["Manager"]},{"section":"Classes","classes":["Scene","Container","Group"]}],"apiCategories":[]}')}}]);
