@@ -1,0 +1,6 @@
+{
+    "name": "scenic",
+    "tree": {
+        "$path": "src"
+    }
+}

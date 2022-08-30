@@ -1,0 +1,23 @@
+title = "Scenic"
+gitRepoUrl = "https://github.com/lillianskull/Scenic/"
+
+gitSourceBranch = "main"
+changelog = true
+
+[[classOrder]]
+classes = ["Manager"]
+
+[[classOrder]]
+section = "Classes"
+classes = ["Scene", "Container", "Group"]
+
+[docusaurus]
+projectName = "Scenic"
+tagline = "Easy to pick up, easy to apply."
+[footer]
+style = "dark"
+copyright = "Copyright ©️ 2022 Artisan. Made with Moonwave"
+
+[home]
+enabled = true
+includeReadme = false

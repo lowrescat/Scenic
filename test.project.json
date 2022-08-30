@@ -1,0 +1,26 @@
+{
+    "name": "Scenic",
+    "tree": {
+        "$className": "DataModel",
+        "ReplicatedStorage": {
+            "$className": "ReplicatedStorage",
+            "Packages": {
+                "$path": "Packages",
+
+                "Scenic": {
+                    "$path": "src"
+                }
+            }
+        },
+        
+        "ServerScriptService": {
+            "$className": "ServerScriptService",
+            "$path": "tests/server"
+        },
+
+        "StarterGui": {
+            "$className": "StarterGui",
+            "$path": "tests/client"
+        }
+    }
+}
