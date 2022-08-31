@@ -1,3 +1,4 @@
+local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local Scenic = require(ReplicatedStorage.Packages.Scenic)
@@ -11,11 +12,6 @@ Frame.AnchorPoint = Vector2.new(.5, .5)
 Frame.Position = UDim2.fromScale(.5, .5)
 Frame.Size = UDim2.fromOffset(50, 50)
 
-local Frame2 = Instance.new("Frame")
-Frame2.AnchorPoint = Vector2.new(.5, .5)
-Frame2.Position = UDim2.fromScale(.5, .5)
-Frame2.Size = UDim2.fromOffset(50, 50)
-
 local Scene = Manager.Create("Scene", {
     Tag = "MyTag",
     Adornee = ScreenGui
@@ -26,26 +22,16 @@ local Container = Manager.Create("Container", {
     Adornee = Scene
 })
 
-local Container2 = Manager.Create("Container", {
-    Tag = "MySecondContainer",
-    Adornee = Scene
+local Element = Manager.Create("Element", {
+    GuiObject = Frame
 })
 
-Container:Push(Frame)
-Container2:Push(Frame2)
+Container:Push(Element)
 
-local Player = game:GetService("Players").LocalPlayer
-
-Player.Chatted:Connect(function(message)
-    if message == "Tween" then
-        Scene:Tween({
-            ["MyContainer"] = {
-                ["Position"] = UDim2.fromScale(.5, .25)
-            },
-
-            ["MySecondContainer"] = {
-                ["Position"] = UDim2.fromScale(.5, .75)
-            }
-        }):PlayAll()
+Players.LocalPlayer.Chatted:Connect(function(message)
+    if message == "SetPos" then
+        Container:Set("Position", UDim2.fromScale(.5, .25))
     end
 end)
+
+print(Manager.FindSceneFromId(1))
