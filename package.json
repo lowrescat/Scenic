@@ -1,0 +1,40 @@
+{
+  "name": "@rbxts/scenic",
+  "version": "0.4.0",
+  "description": "Scenic is a UI framework made for easy control over multiple batches of UI elements through the classes **\"Scene\"** and **\"Container\"**.",
+  "main": "src/init.lua",
+  "typings": "src/index.d.ts",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lillianskull/Scenic.git"
+  },
+  "keywords": [
+    "roblox",
+    "ui",
+    "library",
+    "scene",
+    "scenic"
+  ],
+  "author": "@rbxts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lillianskull/Scenic/issues"
+  },
+  "homepage": "https://lillianskull.github.io/Scenic/",
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "typescript": "^4.8.2"
+  },
+  "devDependencies": {
+    "@rbxts/types": "^1.0.640"
+  }
+}
