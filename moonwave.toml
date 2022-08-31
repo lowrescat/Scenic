@@ -9,7 +9,7 @@ classes = ["Manager"]
 
 [[classOrder]]
 section = "Classes"
-classes = ["Scene", "Container", "Group"]
+classes = ["Scene", "Container", "Element", "Group"]
 
 [docusaurus]
 projectName = "Scenic"
